@@ -9,6 +9,14 @@ set smartindent
 colorscheme OceanicNext
 
 " coding
+inoremap { {}<C-o>h<C-o>l
+inoremap ( ()<C-o>h<C-o>l
+inoremap [ []<C-o>h<C-o>l
+inoremap < <><C-o>h<C-o>l
+inoremap {} {}
+inoremap () ()
+inoremap [] []
+inoremap <> <></><C-o>3h
 inoremap {<CR> {<CR>}<C-o>k<C-o>$<CR>
 inoremap (<CR> (<CR>)<C-o>k<C-o>$<CR><Tab>
 inoremap [<CR> [<CR>]<C-o>k<C-o>$<CR><Tab>
@@ -16,9 +24,6 @@ inoremap [<CR> [<CR>]<C-o>k<C-o>$<CR><Tab>
 nnoremap <lt> <C-w>10<lt>
 
 map <Tab> <C-w>w 
-
-" html
-inoremap < </>
 
 " netrw
 let g:netrw_browse_split = 4
